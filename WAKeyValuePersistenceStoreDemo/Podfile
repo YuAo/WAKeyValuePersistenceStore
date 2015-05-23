@@ -6,11 +6,13 @@ use_frameworks!
 target 'WAKeyValuePersistenceStoreDemo' do
     
 pod 'WAKeyValuePersistenceStore', :path => '../'
+pod 'WAKeyValuePersistenceStore/Generics', :path => '../'
 
 end
 
 target 'WAKeyValuePersistenceStoreDemoTests' do
     
 pod 'WAKeyValuePersistenceStore', :path => '../'
+pod 'WAKeyValuePersistenceStore/Generics', :path => '../'
 
 end

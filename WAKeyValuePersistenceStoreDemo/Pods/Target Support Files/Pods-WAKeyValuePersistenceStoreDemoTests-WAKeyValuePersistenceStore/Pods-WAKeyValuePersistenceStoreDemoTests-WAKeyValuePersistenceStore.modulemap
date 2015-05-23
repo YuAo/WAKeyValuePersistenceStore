@@ -1,0 +1,6 @@
+framework module WAKeyValuePersistenceStore {
+  umbrella header "Pods-WAKeyValuePersistenceStoreDemoTests-WAKeyValuePersistenceStore-umbrella.h"
+
+  export *
+  module * { export * }
+}
