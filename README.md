@@ -17,7 +17,7 @@ self.store = WAKeyValuePersistenceStore(
 
 `directory` is where you want to store the data files. (cache directory, document directory, application support directory... etc.)
 
-`name` is the store's name. Stores with the same name share the same data storage.
+`name` is the store's name. Stores with the same directory/name combination share the same data storage.
 
 `objectSerializer` controls how object will be serialized.
 
