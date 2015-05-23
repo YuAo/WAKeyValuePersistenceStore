@@ -90,9 +90,7 @@ var array = self.typedStore["data"] //array is [Int]
 
 Either clone the repo and manually add the files in `WAKeyValuePersistenceStore` directory
 
-__Or If you use Cocoapods:__
-
-Add the following to your Podfile
+or if you use Cocoapods, add the following to your Podfile
 
 	pod 'WAKeyValuePersistenceStore'
 	
