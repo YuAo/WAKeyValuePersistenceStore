@@ -1,0 +1,18 @@
+PODS:
+  - WAKeyValuePersistenceStore (1.0):
+    - WAKeyValuePersistenceStore/Core (= 1.0)
+    - WAKeyValuePersistenceStore/Generics (= 1.0)
+  - WAKeyValuePersistenceStore/Core (1.0)
+  - WAKeyValuePersistenceStore/Generics (1.0)
+
+DEPENDENCIES:
+  - WAKeyValuePersistenceStore (from `../WAKeyValuePersistenceStore/`)
+
+EXTERNAL SOURCES:
+  WAKeyValuePersistenceStore:
+    :path: "../WAKeyValuePersistenceStore/"
+
+SPEC CHECKSUMS:
+  WAKeyValuePersistenceStore: 2fde4c0ca43cc88503556312abed4e9452ff85bf
+
+COCOAPODS: 0.37.1
