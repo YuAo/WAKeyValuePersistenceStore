@@ -18,7 +18,7 @@ self.store = WAKeyValuePersistenceStore(
 
 `objectSerializer` controls how object will be serialized.
 
-For instance, `WAPersistenceObjectSerializer.keyedArchiveSerializer()` uses `NSKeyedArchiver` and `NSKeyedUnarchiver` to serialize objects. 
+For instance, `WAPersistenceObjectSerializer.keyedArchiveSerializer()` uses `NSKeyedArchiver` and `NSKeyedUnarchiver` to serialize/deserialize objects.
 
 `WAPersistenceObjectSerializer.passthroughSerializer()` is used to directly write the object to the disk. You may want to use this object serializer to store `NSData` objects.
 
