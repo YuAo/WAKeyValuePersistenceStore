@@ -2,4 +2,4 @@ language: objective-c
 xcode_sdk: iphonesimulator
 xcode_workspace: WAKeyValuePersistenceStoreDemo/WAKeyValuePersistenceStoreDemo.xcworkspace
 xcode_scheme: WAKeyValuePersistenceStoreDemo
-#podfile: WAKeyValuePersistenceStoreDemo/Podfile
+podfile: WAKeyValuePersistenceStoreDemo/Podfile

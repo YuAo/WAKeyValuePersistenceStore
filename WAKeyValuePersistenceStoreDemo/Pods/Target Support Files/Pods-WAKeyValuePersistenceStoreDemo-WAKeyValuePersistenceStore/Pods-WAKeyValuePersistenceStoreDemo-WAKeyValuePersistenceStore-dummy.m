@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_WAKeyValuePersistenceStoreDemo_WAKeyValuePersistenceStore : NSObject
-@end
-@implementation PodsDummy_Pods_WAKeyValuePersistenceStoreDemo_WAKeyValuePersistenceStore
-@end
