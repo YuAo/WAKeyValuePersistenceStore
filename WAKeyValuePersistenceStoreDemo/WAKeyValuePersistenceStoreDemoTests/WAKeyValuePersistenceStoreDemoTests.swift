@@ -14,12 +14,12 @@ class WAKeyValuePersistenceStoreDemoTests: XCTestCase {
     
     var store: WAKeyValuePersistenceStore!
     
-    var typedStore: WAKeyValuePersistenceStoreTypedAccessor<Array<Int>>!
+    var typedStore: WAKeyValuePersistenceStoreTypedAccessor<[Int]>!
 
     override func setUp() {
         super.setUp()
         self.store = WAKeyValuePersistenceStore(directory: NSSearchPathDirectory.CachesDirectory, name: "Store", objectSerializer: WAPersistenceObjectSerializer.keyedArchiveSerializer())
-        self.typedStore = WAKeyValuePersistenceStoreTypedAccessor(store: self.store)
+        self.typedStore = WAKeyValuePersistenceStoreTypedAccessor<[Int]>(store: self.store)
     }
     
     override func tearDown() {
@@ -31,7 +31,7 @@ class WAKeyValuePersistenceStoreDemoTests: XCTestCase {
     func testStore() {
         var testData = NSProcessInfo.processInfo().globallyUniqueString
         self.store["data"] = testData
-        XCTAssert(self.store.objectForKey("data") as! String == testData)
+        XCTAssert(self.store["data"] as! String == testData)
     }
     
     func testStoreWithType() {
@@ -51,7 +51,7 @@ class WAKeyValuePersistenceStoreDemoTests: XCTestCase {
     func testRemoveAll() {
         var testData = NSProcessInfo.processInfo().globallyUniqueString
         self.store["data"] = testData
-        XCTAssert(self.store.objectForKey("data") as! String == testData)
+        XCTAssert(self.store["data"] as! String == testData)
         self.store.removeAllObjects()
         XCTAssert(self.store["data"] == nil)
     }
