@@ -7,11 +7,13 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.source       = { :git => "https://github.com/YuAo/WAKeyValuePersistenceStore.git", :tag => "1.0" }
   s.requires_arc = true
+  s.platform     = :ios, '7.0'
   s.subspec 'Core' do |ss|
-    s.source_files = 'WAKeyValuePersistenceStore/*.{h,m}'
+    ss.source_files = 'WAKeyValuePersistenceStore/**/*.{h,m}'
   end
   s.subspec 'Generics' do |ss|
     ss.source_files = 'WAKeyValuePersistenceStore/WAKeyValuePersistenceStore+Generics.swift'
+    ss.platform     = :ios, '8.0'
+    ss.dependency 'WAKeyValuePersistenceStore/Core'
   end
-  s.platform     = :ios, '7.0'
 end
