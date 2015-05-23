@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
     ss.platform     = :ios, '8.0'
     ss.dependency 'WAKeyValuePersistenceStore/Core'
   end
+  s.default_subspec = 'Core'
 end
