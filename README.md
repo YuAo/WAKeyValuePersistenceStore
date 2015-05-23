@@ -74,11 +74,27 @@ For example:
     //.....
     var array = self.typedStore["data"] //array is [Int]
     
+##Install
+
+Either clone the repo and manually add the files in `WAKeyValuePersistenceStore` directory
+
+__Or If you use Cocoapods:__
+
+Add the following to your Podfile
+
+	pod 'WAKeyValuePersistenceStore'
+	
+If you use Swift, you can enable generics support by adding
+	
+	use_frameworks!
+	
+	pod 'WAKeyValuePersistenceStore/Generics'
+	    
 ##Requirements
 
 * Automatic Reference Counting (ARC)
 * iOS 7.0+
-* Xcode 6.0+
+* Xcode 6.3+
 
 ##Contributing
 
