@@ -1,4 +1,7 @@
 # WAKeyValuePersistenceStore
+![CocoaPods Platform](https://img.shields.io/cocoapods/p/WAKeyValuePersistenceStore.svg?style=flat-square)
+![CocoaPods Version](https://img.shields.io/cocoapods/v/WAKeyValuePersistenceStore.svg?style=flat-square)
+![CocoaPods License](https://img.shields.io/cocoapods/l/WAKeyValuePersistenceStore.svg?style=flat-square)
 
 `WAKeyValuePersistenceStore` is a simple, file based Key-Value persistence store. 
 
