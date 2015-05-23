@@ -5,12 +5,12 @@ use_frameworks!
 
 target 'WAKeyValuePersistenceStoreDemo' do
     
-pod 'WAKeyValuePersistenceStore', :path => '../WAKeyValuePersistenceStore/'
+pod 'WAKeyValuePersistenceStore', :path => '../'
 
 end
 
 target 'WAKeyValuePersistenceStoreDemoTests' do
     
-pod 'WAKeyValuePersistenceStore', :path => '../WAKeyValuePersistenceStore/'
+pod 'WAKeyValuePersistenceStore', :path => '../'
 
 end
