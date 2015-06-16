@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WAPersistenceObjectSerializer : NSObject <WAPersistenceObjectSerialization>
 
+- (instancetype)init NS_UNAVAILABLE;
+
 + (instancetype)passthroughSerializer;
 
 + (instancetype)keyedArchiveSerializer;

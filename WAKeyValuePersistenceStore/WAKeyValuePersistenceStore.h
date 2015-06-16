@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly,strong) id<WAPersistenceObjectSerialization> objectSerializer;
 
+- (instancetype)init NS_UNAVAILABLE;
+
 - (instancetype)initWithDirectory:(NSSearchPathDirectory)directory
                              name:(NSString *)name
                  objectSerializer:(id<WAPersistenceObjectSerialization>)objectSerializer NS_DESIGNATED_INITIALIZER;
