@@ -1,8 +1,8 @@
 PODS:
-  - WAKeyValuePersistenceStore (1.0):
-    - WAKeyValuePersistenceStore/Core (= 1.0)
-  - WAKeyValuePersistenceStore/Core (1.0)
-  - WAKeyValuePersistenceStore/Generics (1.0):
+  - WAKeyValuePersistenceStore (1.1):
+    - WAKeyValuePersistenceStore/Core (= 1.1)
+  - WAKeyValuePersistenceStore/Core (1.1)
+  - WAKeyValuePersistenceStore/Generics (1.1):
     - WAKeyValuePersistenceStore/Core
 
 DEPENDENCIES:
@@ -14,6 +14,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WAKeyValuePersistenceStore: ad168ff2c7c2e3762d4027f1b0678440230c576b
+  WAKeyValuePersistenceStore: 5894ffc1d4d44bf5177ff64d8e0bfa239241aaa1
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.37.2
