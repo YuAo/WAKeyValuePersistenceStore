@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = 'A file based Key-Value persistence store for iOS.'
   s.homepage     = 'https://github.com/YuAo/WAKeyValuePersistenceStore'
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
-  s.source       = { :git => "https://github.com/YuAo/WAKeyValuePersistenceStore.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/YuAo/WAKeyValuePersistenceStore.git", :tag => "1.1" }
   s.requires_arc = true
   s.platform     = :ios, '7.0'
   s.subspec 'Core' do |ss|
