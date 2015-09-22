@@ -29,19 +29,19 @@ class WAKeyValuePersistenceStoreDemoTests: XCTestCase {
     }
     
     func testStore() {
-        var testData = NSProcessInfo.processInfo().globallyUniqueString
+        let testData = NSProcessInfo.processInfo().globallyUniqueString
         self.store["data"] = testData
         XCTAssert(self.store["data"] as! String == testData)
     }
     
     func testStoreWithType() {
-        var testData = [0,1,2,3,4,5,6]
+        let testData = [0,1,2,3,4,5,6]
         self.typedStore["data"] = testData
         XCTAssert((self.typedStore["data"]!) == testData)
     }
     
     func testRemove() {
-        var testData = [0,1,2,3,4,5,6]
+        let testData = [0,1,2,3,4,5,6]
         self.typedStore["data"] = testData
         XCTAssert(self.typedStore["data"]! == testData)
         self.typedStore["data"] = nil
@@ -49,7 +49,7 @@ class WAKeyValuePersistenceStoreDemoTests: XCTestCase {
     }
     
     func testRemoveAll() {
-        var testData = NSProcessInfo.processInfo().globallyUniqueString
+        let testData = NSProcessInfo.processInfo().globallyUniqueString
         self.store["data"] = testData
         XCTAssert(self.store["data"] as! String == testData)
         self.store.removeAllObjects()
