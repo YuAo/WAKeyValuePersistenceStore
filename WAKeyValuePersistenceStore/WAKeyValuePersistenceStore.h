@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WAKeyValuePersistenceStore/WAPersistenceObjectSerialization.h>
+#import "WAPersistenceObjectSerialization.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

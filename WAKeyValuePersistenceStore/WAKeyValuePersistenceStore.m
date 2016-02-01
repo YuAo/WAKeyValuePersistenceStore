@@ -91,7 +91,11 @@ static NSString * WAMD5HashForKey(NSString *key) {
                 BOOL isDirectory = NO;
                 if (![fileManager fileExistsAtPath:_cacheDirectoryPath isDirectory:&isDirectory] || !isDirectory) {
                     [fileManager removeItemAtPath:_cacheDirectoryPath error:nil];
-                    [fileManager createDirectoryAtPath:_cacheDirectoryPath withIntermediateDirectories:YES attributes:@{NSFileProtectionKey: NSFileProtectionNone} error:nil];
+                    NSDictionary *attributes = @{};
+                    #if (TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH)
+                    attributes = @{NSFileProtectionKey: NSFileProtectionNone};
+                    #endif
+                    [fileManager createDirectoryAtPath:_cacheDirectoryPath withIntermediateDirectories:YES attributes:attributes error:nil];
                 }
             }
         }
@@ -111,7 +115,11 @@ static NSString * WAMD5HashForKey(NSString *key) {
 - (void)writeObject:(id)object toFile:(NSString *)path {
     NSData *data = [self.objectSerializer dataForCachingObject:object];
     NSError *error;
-    [data writeToFile:path options:NSDataWritingFileProtectionNone|NSDataWritingAtomic error:&error];
+    NSDataWritingOptions options = NSDataWritingAtomic;
+    #if (TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH)
+    options = options | NSDataWritingFileProtectionNone;
+    #endif
+    [data writeToFile:path options:options error:&error];
     if (error) { NSLog(@"%@ : ERROR writting object to file. \n [obj]:%@ \n [path]: %@ \n [Error]: %@",self,object,path,error); }
 }
 
